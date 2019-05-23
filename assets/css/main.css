@@ -1,0 +1,123 @@
+/* Style gdp-plugin start here */
+.gdp-plugin {
+  background-color: #FFF;
+}
+
+
+/* Style the tab */
+.plugin-button {
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width:100%;
+  height: 100%;
+}
+
+/* Style the buttons that are used to open the tab content */
+.plugin-button button {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 20px 15px;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.plugin-button button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.plugin-button button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  float: left;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  width: 100%;
+  height: 100%;
+  border-left: none;
+}
+
+/************ start savechange button here ********/
+.btn-savechange{border:0; padding:6px 8px; background-color: #23272B;color:#fff;border-radius: 5px;transition:.5s;}
+.btn-savechange:hover{background-color:green;}
+.btn{border:none;}
+.btn:hover{background-color:green;}
+/************ End savechange button here ********/
+.specify-section{display: none;}
+.enable-disabale-section{margin-top: -10px;}
+.reject-button{margin-top: 6px;}
+.lineheight{
+  border:.5px solid #6EA474;
+  width:50%;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+

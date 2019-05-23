@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="x-ua-compatible" content="ie=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="This is a Bootstrap 4 Quick Starter Pack." />
+	<meta name="keyword" content="bootstrap 4, quick starter pack" />
+    <meta name="author" content="Abdur Rahim"/>
+    <!-- google fonts here -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <!-- Place favicon.ico in the root directory -->
+
+	<title>GDP plugin design layout</title>
+
+	<!--=== All CSS ===-->
+	<!-- Bootstrap-CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/css/bootstrap-colorpicker.min.css" />
+	<!-- Fontawesome-CSS -->
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<!-- OWLCarousel-CSS -->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+	<!-- Default-CSS -->
+	<link rel="stylesheet" href="assets/css/default.css" />
+	<!-- Custom-CSS -->
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<!-- Responsive-CSS -->
+	<link rel="stylesheet" href="assets/css/responsive.css" />
+</head>
+<body>
+
+<!--************* GDP plugin start hear *************-->
+    <div class="gdp-plugin">
+        <div class="container">
+            <h1 class="text-center text-black p-2">GDP Plugin Layout Designe</h1>
+            <div class="row no-gutters mt-3 pb-5">
+                <div class="col-lg-3">
+                        <div class="plugin-button">
+                            <button class="tablinks" onclick="openCity(event, 'General Setting')">General Setting</button>
+                            <button class="tablinks" onclick="openCity(event, 'Banner and Button Setting')">Banner and Button Setting</button>
+                            <button class="tablinks" onclick="openCity(event, 'Cookies Screen Setting')">Cookies Screen Setting</button>
+                            <button class="tablinks" onclick="openCity(event, 'Privacy or Policy')">Privacy or Policy</button>
+                            <button class="tablinks" onclick="openCity(event, 'Geo Location')">Geo Location</button>
+                            <button class="tablinks" onclick="openCity(event, 'Export / Inport Setting')">Export / Inport Setting</button>
+                            <button class="tablinks" onclick="openCity(event, 'Help')">Help</button>
+                        </div>
+                    </div>
+                <div class="col-lg-9">
+                    <div id="plugin-option">
+                        <div id="Banner and Button Setting" class="tabcontent">
+                            <h5 class="text-left p-2 text-black">Banner and button Customize</h5>
+                            <div class="lineheight"></div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="banner-section mt-3 shadow-sm bg-light rounded">
+                                        <p class="text-left p-2 text-black">Baner Button Content :</p>
+                                    </div>
+                                    <div class="Cokie-section mt-5 shadow-sm bg-light rounded">
+                                        <p class="text-left p-2 text-black">Cokie Bar Color :</p>
+                                    </div>
+                                    <div class="textcolor-section mt-4 shadow-sm bg-light rounded">
+                                        <p class="text-left p-2 text-black">Text Color :</p>
+                                    </div>
+                                    <div class="font-section mt-4 shadow-sm bg-light rounded">
+                                        <p class="text-left p-2 text-black">Font :</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <form>
+                                        <div class="form-group mt-3">
+                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="1"></textarea>
+                                         <p class="text-muted">You can use the following shortcut to link the cokie setting screen: [setting] setting [/setting]</p>
+                                        </div>
+                                    </form>
+                                    <div class="enable-disabale-section d-flex">
+                                        <h6 class="p-2 text-muted">Dark</h6>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                        <h6 class="p-2 text-primary">Light</h6>
+                                    </div>
+                                    <div class="form-row text-colr-form mt-4 shadow-sm bg-light rounded">
+                                        <div class="form-check">
+                                             <a href="#" class="btn btn-dark mr-1" id="cp4">Color</a>
+                                        </div>
+                                        <div>
+                                             <input type="text" class="form-control form-control-md" placeholder="Select color">
+                                        </div>
+                                    </div>
+
+                                    <div class="font-section mt-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                            <label class="form-check-label" for="exampleRadios1"> Default
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                            <label class="form-check-label" for="exampleRadios2">Inherit font famaily from your WP theme.
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" value="option2" onclick="show()";/>
+                                            <label class="form-check-label" for="exampleRadios2">Specify custom font
+                                        </label>
+                                    </div class="specify-section shadow-sm bg-light rounded">
+                                    <input type="text" class="form-control mt-2" id="specify-section1" placeholder="Please write your font name">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <div class="button-section mt-5 shadow-sm bg-light rounded">
+                                        <p class="text-left p-2 text-black">Accept - Button Text :</p>
+                                    </div>
+                                    <div class="textcol-section mt-4 shadow-sm bg-light rounded">
+                                        <p class="text-left p-2 text-black">Text color :</p>
+                                    </div>
+                                    <div class="backcolor-section mt-4 shadow-sm bg-light rounded">
+                                        <p class="tex-left text-black p-2">Background color :</p>
+                                    </div>
+                                    <div class="rejbutton-section mt-4 shadow-sm bg-light rounded">
+                                        <p class="tex-left text-black p-2">Reject Button :</p>
+                                    </div>
+                                    <div class="rejectbutton-section mt-4 shadow-sm bg-light rounded">
+                                        <p class="tex-left text-black p-2">Reject button Text</p>
+                                    </div>
+                                    <div class="textcol2-section mt-4 shadow-sm bg-light rounded">
+                                        <p class="tex-left text-black p-2">Text color :</p>
+                                    </div>
+                                    <div class="backcolor2-section mt-4 shadow-sm bg-light rounded">
+                                        <p class="tex-left text-black p-2">Background color :</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-8 pb-3">
+                                    <div class="accept-form mt-5">
+                                        <input class="form-control" type="text" placeholder="Accept">
+                                    </div>
+                                    <div class="form-row text-colr-form mt-4 shadow-sm bg-light rounded">
+                                        <div>
+                                             <a href="#" class="btn btn-dark mr-1 " id="cp5">Color</a>
+                                        </div>
+                                        <div>
+                                             <input type="text" class="form-control form-control-md" placeholder="Select color">
+                                        </div>
+                                    </div>
+                                    <div class="form-row text-colr-form mt-4 shadow-sm bg-light rounded">
+                                        <div>
+                                             <a href="#" class="btn btn-dark mr-1" id="cp6">Color</a>
+                                        </div>
+                                        <div>
+                                             <input type="text" class="form-control form-control-md" placeholder="Select color">
+                                        </div>
+                                    </div>
+                                    <div class="reject-button pt-4 d-flex">
+                                        <h6 class="p-2 text-muted">Enable</h6>
+                                        <label class="switch">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                        </label>
+                                        <h6 class="p-2 text-primary">Disable</h6>
+                                    </div>
+                                    <div class="reject-button-text mt-4 shadow-sm bg-light rounded">
+                                         <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Reject">
+                                    </div>
+                                    <div class="form-row text-colr-form mt-4 shadow-sm bg-light rounded">
+                                        <div>
+                                             <a href="#" class="btn btn-dark mr-1" id="cp7">Color</a>
+                                        </div>
+                                        <div>
+                                             <input type="text" class="form-control form-control-md" placeholder="Select color">
+                                        </div>
+                                    </div>
+                                    <div class="form-row text-colr-form mt-4 shadow-sm bg-light rounded">
+                                        <div>
+                                             <a href="#" class="btn btn-dark mr-1" id="cp8">Color</a>
+                                        </div>
+                                        <div>
+                                             <input type="text" class="form-control form-control-md" placeholder="Select color">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="Save-section float-right pt-5 pb-5">
+                            <button type="button" class="btn-savechange mt-3">Save Change</button>
+                        </div>
+                    </div>
+                        <div id="General Setting" class="tabcontent">
+                            <h3>General Setting</h3>
+                            <p>General Setting.</p>
+                        </div>
+
+                        <div id="Cookies Screen Setting" class="tabcontent">
+                            <h3>Cookies Screen Setting</h3>
+                            <p>Cookies Screen Setting.</p>
+                        </div>
+
+                        <div id="Privacy or Policy" class="tabcontent">
+                            <h3>Privacy or Policy</h3>
+                            <p>Privacy or Policy.</p>
+                        </div>
+
+                        <div id="Geo Location" class="tabcontent">
+                            <h3>Geo Location</h3>
+                            <p>Geo Location.</p>
+                        </div>
+
+                        <div id="Export / Inport Setting" class="tabcontent">
+                            <h3>Export / Inport Setting</h3>
+                            <p>Export / Inport Setting.</p>
+                        </div>
+                        <div id="Help" class="tabcontent">
+                            <h3>Help</h3>
+                            <p>We are always helpful.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--************* GDP plugin end hear *************-->
+
+
+	<!--=== All JS ===-->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<!-- Modernizr-JS -->
+	<script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
+	<!-- jQuery Library -->
+	<script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+	<!-- Popper-JS -->
+	<script src="assets/js/vendor/popper.min.js"></script>
+	<!-- Bootstrap-JS -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-colorpicker.min.js"></script>
+	<!-- OWLCarousel-JS -->
+    <script src="assets/js/owl.carousel.min.js"></script>
+	<!-- Nicescroll-JS -->
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+	<!-- Magnific-JS -->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!-- Custom-JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
